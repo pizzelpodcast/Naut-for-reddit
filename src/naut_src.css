@@ -2436,7 +2436,7 @@ div.titlebox span.number:after {
     }
 
 .commentarea > .usertext textarea:not(:focus) {
-    background: url(%%commentboxbg%%) no-repeat 50% 50%;
+    /* background: url(%%commentboxbg%%) no-repeat 50% 50%; */
 }
 
 .usertext .bottom-area {
