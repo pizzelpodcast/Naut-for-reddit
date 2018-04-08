@@ -98,7 +98,7 @@ body .btn, body button, .c-btn-primary, .wiki-page .wiki-page-content .wiki_butt
     margin: 0;
     height: 196px;
     border: none;
-    background: url(%%headerimg%%) 50% 50% / cover no-repeat;
+    background: url(%%headerimg%%) 50% 50% / repeat;
     z-index: 1;
     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
@@ -3665,10 +3665,10 @@ ul.image-preview-list {
 
 /* Footer */
 .footer-parent {
-    height: 800px;
-    margin-top: 192px;
+    height: 400px;
+    margin-top: 100px;
     padding: 528px 0 64px;
-    background: url(%%footer%%) 50% 0 / cover no-repeat;
+    /* background: url(%%footer%%) 50% 0 / cover no-repeat; */
 }
 
 .footer {
