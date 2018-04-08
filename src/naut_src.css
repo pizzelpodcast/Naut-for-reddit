@@ -98,14 +98,14 @@ body .btn, body button, .c-btn-primary, .wiki-page .wiki-page-content .wiki_butt
     margin: 0;
     height: 196px;
     border: none;
-    background: url(%%headerimg%%) 50% 50% / repeat;
+    background: url(%%headerimg%%) repeat;
     z-index: 1;
     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
 
 /* Subreddits Bar */
 #sr-header-area {
-    background: rgba(0,0,0,0.08);
+    background: rgba(0,0,0,0.5);
     border: none;
     transition: all .15s ease;
     height: 24px;
@@ -385,10 +385,15 @@ body:not(.loggedin) #header-bottom-right {
     #header .pagename a {
         display: inline-block;
         line-height: 42px;
-        color: #fff;
-        font: normal 700 42px/42px Lato,Arial,sans-serif;
+        color: rgba(0, 0, 0, .7);
+        font: normal 300 42px/42px Lato,Arial,sans-serif;
         text-shadow: 0 1px 12px rgba(0,0,0,0.2);
     }
+
+        #header .pagename a:hover {
+            text-decoration: none;
+            color: black;
+        }
 
 /* Tabmenu - Hot / New / Top */
 #header-bottom-left {
@@ -412,7 +417,7 @@ body:not(.loggedin) #header-bottom-right {
         position: absolute;
         left: -16px;
         right: -384px;
-        background: rgba(0,0,0,0.24);
+        background: rgba(0,0,0,0.8);
         height: 42px;
         z-index: -1;
     }
@@ -2647,7 +2652,7 @@ div.titlebox span.number:after {
 }
 
 .res-nightmode #sr-header-area {
-    background-color: rgba(0,0,0,0.08) !important;
+    background-color: rgba(0,0,0,0.5) !important;
 }
 
 .res-nightmode body.listing-page > .content, .res-nightmode body.other-discussions-page > .content, .res-nightmode .comments-page .link, .res-nightmode .commentarea > .sitetable > .comment, .res-nightmode #images, .res-nightmode .combined-search-page > .content, .res-nightmode .sponsorshipbox, .res-nightmode .stylesheet-customize-container .pretty-form, .res-nightmode .side .sidecontentbox, .res-nightmode .account-activity-box, .res-nightmode .side .titlebox, .res-nightmode #previoussearch #moresearchinfo, .res-nightmode #ad-frame, .res-nightmode #ad_main, .res-nightmode .wiki-page .wiki-page-content, .res-nightmode .linefield, .res-nightmode .submit-page .roundfield, .res-nightmode .login-form-side, .res-nightmode .comments-page .side .linkinfo, .res-nightmode .reason-popup-innercontent, .res-nightmode .reddit-infobar.with-icon, .res-nightmode .wiki-page .pageactions, .res-nightmode #newlink-with-image-upload #new-link-video-preview, .res-nightmode #newlink-with-image-upload .media-post-upload-progress, .res-nightmode .gold-accent.comment-visits-box, .res-nightmode .wiki-page .wikititle {
@@ -3665,16 +3670,17 @@ ul.image-preview-list {
 
 /* Footer */
 .footer-parent {
-    height: 400px;
-    margin-top: 100px;
-    padding: 528px 0 64px;
+    height: auto;
+    /* margin-top: 0; */
+    padding: 32px 0 64px;
+    background: rgba(0, 0, 0, .75);
     /* background: url(%%footer%%) 50% 0 / cover no-repeat; */
 }
 
 .footer {
     border: 0 solid;
-    border-radius: 2px;
-    background: rgba(43,51,58,0.64);
+    /* border-radius: 2px; */
+    /* background: rgba(43,51,58,0.64); */
     padding: 16px;
     max-width: 640px;
 }
